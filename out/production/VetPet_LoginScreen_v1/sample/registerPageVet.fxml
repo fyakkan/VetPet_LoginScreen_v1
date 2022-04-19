@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f7f1e6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registerVetController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="421.0" fitWidth="262.0" layoutX="96.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/catAndDog.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="vetRegisterBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goVetLoginPage" prefHeight="23.0" prefWidth="78.0" style="-fx-background-color: #636363;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="100.0" layoutY="66.0" text="Vet Register Page">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="vetRegisterUsername" layoutX="150.0" layoutY="300.0" promptText="Username" />
+            <PasswordField fx:id="vetRegisterPassword" layoutX="150.0" layoutY="346.0" promptText="Password" />
+            <Label layoutX="66.0" layoutY="300.0" prefHeight="21.0" prefWidth="95.0" text="Username:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="346.0" text="Password:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="vetRegisterButton" layoutX="182.0" layoutY="381.0" mnemonicParsing="false" onAction="#registerVet" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #636363;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
